@@ -19,7 +19,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 import { useCart } from "./CartContext";
-
+import { NavLink } from "react-router-dom";
 const CartPage = () => {
   const { cartItems, updateQty, removeFromCart, clearCart, totals } = useCart();
 
@@ -384,6 +384,8 @@ const CartPage = () => {
                     <Button
                       variant="contained"
                       fullWidth
+                      component={NavLink}
+                      to="/Paymentpage"
                       sx={{
                         borderRadius: 999,
                         py: 1.2,

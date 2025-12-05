@@ -15,6 +15,7 @@ import CartPage from "./pages/CartPage";
 import { CartProvider } from "./pages/CartContext";
 import SignUp from "./pages/SignUp";
 import SignIn from "./pages/SignIn";
+import PaymentPage from "./pages/PaymentPage";
 
 const theme = createTheme({
   palette: {
@@ -52,6 +53,7 @@ function App() {
               <Route path="cart" element={<CartPage />} />
               <Route path="SignUp" element={<SignUp/>}/>
               <Route path="SignIn" element={<SignIn/>}/>
+              <Route path="PaymentPage" element={<PaymentPage/>}/>
               {/* future: <Route path="explore" element={<ExplorePage />} /> */}
             </Route>
           </Routes>

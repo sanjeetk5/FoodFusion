@@ -420,9 +420,6 @@ const Homepage = () => {
                 Explore curated lists of top restaurants, cafes, pubs, and bars.
               </Typography>
             </Box>
-            <Button variant="text" size="small">
-              All collections &gt;
-            </Button>
           </Stack>
 
           <Grid container spacing={3} sx={{ mt: 3 }}>
